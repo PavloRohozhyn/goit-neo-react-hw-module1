@@ -1,6 +1,6 @@
 import React from "react";
-import TransactionHistoryData from "./TransactionHistoryData";
-import css from "./Transaction.module.css";
+import TransactionHistoryData from "../TransactionHistoryData/TransactionHistoryData";
+import css from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({ items }) => {
   return (

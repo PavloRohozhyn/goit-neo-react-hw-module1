@@ -1,6 +1,6 @@
-import Profile from "./components/profile/Profile";
-import FriendList from "./components/friend/FriendList";
-import TransactionHistory from "./components/transaction/TransactionHistory";
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import userData from "../userData.json";
 import friends from "../friends.json";
 import transactions from "../transactions.json";
@@ -8,7 +8,7 @@ import transactions from "../transactions.json";
 const App = () => {
   return (
     <>
-      <fieldset>
+      <fieldset className="space">
         <legend>
           <h2>Завдання 1</h2>
         </legend>
@@ -21,14 +21,14 @@ const App = () => {
         />
       </fieldset>
 
-      <fieldset>
+      <fieldset className="space">
         <legend>
           <h2>Завдання 2</h2>
         </legend>
         <FriendList friends={friends} />
       </fieldset>
 
-      <fieldset>
+      <fieldset className="space">
         <legend>
           <h2>Завдання 3</h2>
         </legend>

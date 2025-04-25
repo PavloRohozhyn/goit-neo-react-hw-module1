@@ -1,0 +1,11 @@
+.fr_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.fr_list_item {
+  text-align: center;
+}
