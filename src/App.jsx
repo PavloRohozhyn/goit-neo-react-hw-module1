@@ -1,27 +1,39 @@
 import Profile from "./components/profile/Profile";
-
-const userData = {
-  username: "Jacques Gluke",
-  tag: "jgluke",
-  location: "Ocho Rios, Jamaica",
-  avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
+import FriendList from "./components/friend/FriendList";
+import TransactionHistory from "./components/transaction/TransactionHistory";
+import userData from "../userData.json";
+import friends from "../friends.json";
+import transactions from "../transactions.json";
 
 const App = () => {
   return (
     <>
-      <Profile
-        name={userData.username}
-        tag={userData.tag}
-        location={userData.location}
-        image={userData.avatar}
-        stats={userData.stats}
-      />
+      <fieldset>
+        <legend>
+          <h2>Завдання 1</h2>
+        </legend>
+        <Profile
+          name={userData.username}
+          tag={userData.tag}
+          location={userData.location}
+          image={userData.avatar}
+          stats={userData.stats}
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Завдання 2</h2>
+        </legend>
+        <FriendList friends={friends} />
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Завдання 3</h2>
+        </legend>
+        <TransactionHistory items={transactions} />
+      </fieldset>
     </>
   );
 };

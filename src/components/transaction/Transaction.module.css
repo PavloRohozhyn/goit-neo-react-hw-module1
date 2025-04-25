@@ -1,0 +1,25 @@
+.t_main {
+  width: 60%;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+.t_main tr th {
+  padding: 12px 116px;
+  text-align: left;
+  border: 1px solid #000;
+}
+
+.t_head {
+  background-color: black;
+  color: white;
+}
+
+.t_body tr:nth-child(even) {
+  background-color: grey;
+}
+
+.t_body tr:nth-child(odd):not(:first-child) {
+  background-color: white;
+}
